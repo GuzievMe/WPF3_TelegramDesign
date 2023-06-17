@@ -1,0 +1,287 @@
+﻿<Window x:Class="WpfPrcts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPrcts"
+        xmlns:extToolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="580" Width="820" WindowState="Normal"     ResizeMode="NoResize"     >
+    <Grid>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width=" 2*"/>
+            <ColumnDefinition Width=" 3*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--1CI SETIR == Sol-->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="*" />
+                <RowDefinition  Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="White" >
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width=" *"/>
+                    <ColumnDefinition Width=" 5*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" Margin="10 5" Source="/icons8-hamburger-24.png" Width=" 30" Height=" 30" HorizontalAlignment="Left" />
+                <TextBox Grid.Column=" 1"  Margin=" 5" Width=" 240" Background="FloralWhite" VerticalAlignment="Center" FontSize=" 20"   HorizontalAlignment="Left" x:Name="searchBox" Text="Search" Foreground="Gray" GotKeyboardFocus="txtBox_GotKeyboardFocus" LostKeyboardFocus="txtBox_LostKeyboardFocus" />
+            </Grid>
+
+            <Grid Grid.Row=" 1">
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=" *"/>
+                    <ColumnDefinition Width=" 4*"/>
+                    <ColumnDefinition  Width=" 2*"/>
+                </Grid.ColumnDefinitions>-->
+                <!--<StackPanel  Orientation="Vertical"  Grid.Column="0">
+                    <Border CornerRadius="25" Background="#ffffff" BorderBrush="#2a3b57" 
+                     BorderThickness="5" Height="50" Width="50"   VerticalAlignment="Top" >
+                        <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="ES" FontSize="30" TextAlignment="Center"   />
+                    </Border>
+                    
+                    <Border Style="{DynamicResource borderSty}">
+                        <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="AS" FontSize="30" TextAlignment="Center"   />
+                    </Border>
+                    <Border Style="{DynamicResource borderSty}">
+                        <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="MA" FontSize="30" TextAlignment="Center"   />
+                    </Border>
+                    <Border Style="{DynamicResource borderSty}">
+                        <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="EC" FontSize="30" TextAlignment="Center"   />
+                    </Border>
+                    <Border Style="{DynamicResource borderSty}">
+                        <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="OP" FontSize="30" TextAlignment="Center"   />
+                    </Border>
+                    <Border Style="{DynamicResource borderSty}">
+                        <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="MB" FontSize="30" TextAlignment="Center"   />
+                    </Border>
+                    <Border Style="{DynamicResource borderSty}">
+                        <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="NP" FontSize="30" TextAlignment="Center"   />
+                    </Border>
+
+
+
+                    <Button Grid.Row="2"  >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Style="{DynamicResource borderSty}" Background="SkyBlue" >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="DJ" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <Label Content  = "David Larison" FontSize=" 20" Foreground="Red" />
+                        </StackPanel>
+                    </Button>
+
+
+                </StackPanel>-->
+
+                <StackPanel Grid.Row="2" Orientation="Vertical" HorizontalAlignment="Left"  >
+                    <Button  Background="Transparent"  >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border   Style="{DynamicResource borderSty}" BorderThickness=" 1" Background="OrangeRed"  Margin="0 0 0 0" >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="ES" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <StackPanel Margin="0 0 50 0" Orientation="Vertical"  >
+                                <Label  Content  = "Elma Selim" FontSize=" 18" Foreground="Red" />
+                                <Label  Content=" Last message from Selim" FontSize=" 10" Foreground="Blue" />
+                            </StackPanel>
+
+                            <StackPanel >
+                                <Label Margin=" 24 3 3 3" Content="11 : 23"/>
+                                <Label Content="1" Foreground="BlueViolet"  Margin=" 24  0 3 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Background="Transparent"   >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Style="{DynamicResource borderSty}" BorderThickness=" 1" Background="Orange"  >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="AS" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <StackPanel Margin="0 0 55 0" Orientation="Vertical"  >
+                                <Label  Content  = "Aykin Sari" FontSize=" 18" Foreground="Red" />
+                                <Label  Content=" Last message from Sari" FontSize=" 10" Foreground="Blue" />
+                            </StackPanel>
+
+                            <StackPanel >
+                                <Label Margin=" 24 3 3 3" Content="11 : 23"/>
+                                <Label Content="1" Foreground="BlueViolet"  Margin=" 24  0 3 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Background="Transparent"   >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Style="{DynamicResource borderSty}" BorderThickness=" 1" Background="Yellow" Opacity=" 0.5"     >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="MA" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <StackPanel Margin="0 0 60 0" Orientation="Vertical"  >
+                                <Label  Content  = "Marat Ali" FontSize=" 18" Foreground="Red" />
+                                <Label  Content=" Last message from Ali" FontSize=" 10" Foreground="Blue" />
+                            </StackPanel>
+
+                            <StackPanel >
+                                <Label Margin=" 24 3 3 3" Content="11 : 23"/>
+                                <Label Content="1" Foreground="BlueViolet"  Margin=" 24  0 3 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+
+                    <Button  Background="Transparent"  >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Style="{DynamicResource borderSty}" BorderThickness=" 1" Background="Green"  >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="EC" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <StackPanel Margin="0 0 45 0" Orientation="Vertical"  >
+                                <Label  Content  = "Eylim Celal" FontSize=" 18" Foreground="Red" />
+                                <Label  Content=" Last message from Lardnd" FontSize=" 10" Foreground="Blue" />
+                            </StackPanel>
+
+                            <StackPanel >
+                                <Label Margin=" 24 3 3 3" Content="11 : 23"/>
+                                <Label Content="1" Foreground="BlueViolet"  Margin=" 24  0 3 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+
+                    <Button  Background="Transparent"  >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Style="{DynamicResource borderSty}" BorderThickness=" 1" Background="SkyBlue" >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="OP" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <StackPanel Margin="0 0 48 0" Orientation="Vertical"  >
+                                <Label  Content  = "Orhan Pamuk" FontSize=" 18" Foreground="Red" />
+                                <Label  Content=" Last message from Lardnd" FontSize=" 10" Foreground="Blue" />
+                            </StackPanel>
+
+                            <StackPanel >
+                                <Label Margin=" 24 3 3 3" Content="11 : 23"/>
+                                <Label Content="1" Foreground="BlueViolet"  Margin=" 24  0 3 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+
+                    <Button  Background="Transparent"  >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Style="{DynamicResource borderSty}" BorderThickness=" 1" Background="Blue"  >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="MB" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <StackPanel Margin="0 0 20 0" Orientation="Vertical"  >
+                                <Label  Content  = "Mandila Banderas" FontSize=" 18" Foreground="Red" />
+                                <Label  Content=" Last message from Mandila" FontSize=" 10" Foreground="Blue" />
+                            </StackPanel>
+
+                            <StackPanel >
+                                <Label Margin=" 24 3 3 3" Content="11 : 23"/>
+                                <Label Content="1" Foreground="BlueViolet"  Margin=" 24  0 3 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+
+                    <Button  Background="Transparent"  >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Style="{DynamicResource borderSty}" BorderThickness=" 1" Background="Violet"  >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="NP" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <StackPanel Margin="12 0" Orientation="Vertical"  >
+                                <Label  Content  = "Nina Polinevskoya" FontSize=" 18" Foreground="Red" />
+                                <Label  Content=" Last message from Polinevskoya" FontSize=" 10" Foreground="Blue" />
+                            </StackPanel>
+
+                            <StackPanel >
+                                <Label Margin=" 24 3 3 3" Content="11 : 23"/>
+                                <Label Content="1" Foreground="BlueViolet"  Margin=" 24  0 3 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Background="Transparent"   >
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Style="{DynamicResource borderSty}" BorderThickness=" 1" Background="RosyBrown"  >
+                                <TextBlock Background  =  "Transparent" HorizontalAlignment="Center"
+                         VerticalAlignment="Center" 
+                         Text="DJ" FontSize="30" TextAlignment="Center"   />
+                            </Border>
+                            <StackPanel Margin="0 0 50 0" Orientation="Vertical"  >
+                                <Label  Content  = "David Larison" FontSize=" 18" Foreground="Red" />
+                                <Label  Content=" Last message from Lardnd" FontSize=" 10" Foreground="Blue" />
+                            </StackPanel>
+
+                            <StackPanel >
+                                <Label Margin=" 24 3 3 3" Content="11 : 23"/>
+                                <Label Content="1" Foreground="BlueViolet"  Margin=" 24  0 3 0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+
+
+                </StackPanel>
+
+
+
+            </Grid>
+
+
+        </Grid>
+        <!--===================SOLUN SONU===========================-->
+
+
+        <!--SAG -  2ci column-->
+
+        <Grid Grid.Column="1"  Background="White" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height=" 0.67*"/>
+                <RowDefinition Height=" 6*"/>
+                <RowDefinition Height=" *"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0"  Orientation="Horizontal"   Margin=" 3 0 10 0">
+                <Line Stretch="Fill" Stroke="Black" X1="0"  StrokeThickness="1" Opacity=" 0.5"
+HorizontalAlignment="Left"  Y1="10" Y2="100"  />
+                <StackPanel Orientation="Vertical" >
+                    <Label  Content="Eva Summer" VerticalAlignment="Top"   FontSize="14" />
+                    <TextBlock  Text="online" Foreground="Blue" FontSize="9" Margin=" 3 0 "/>
+                </StackPanel>
+                <Image Source="/icons8-search-32.png"  Margin=" 310 0 3 0" Width=" 25"/>
+                <Image Source="/icons8-bullet-list-30.png" Margin="26 0" />
+            </StackPanel>
+            <TextBlock Grid.Row=" 1" Background="WhiteSmoke" Margin="5 0" Height="340"/>
+
+            <TextBox Grid.Row="2" FontSize ="20" VerticalAlignment="Center" x:Name="txtBox" Text="Arka plan metni" Foreground="Gray" GotKeyboardFocus="txtBox_GotKeyboardFocus" LostKeyboardFocus="txtBox_LostKeyboardFocus" />
+
+        </Grid>
+
+    </Grid>
+
+</Window>
+
